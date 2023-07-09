@@ -102,6 +102,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-agency (1.0.7)
+      jekyll (~> 3.8)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.1.1)
@@ -211,11 +213,9 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.18.1)
-    nokogiri (1.15.3-arm64-darwin)
+    nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.3-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.15.3-x86_64-linux)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -261,8 +261,10 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 228)
   http_parser.rb (~> 0.6.0)
+  jekyll-agency (~> 1.0)
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
+  nokogiri
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
