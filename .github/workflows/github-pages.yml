@@ -14,9 +14,10 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.2
+          ruby-version: '3.2.2'
 
       - name: Build and deploy Jekyll site
-        uses: helaili/jekyll-action@2.0.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./_site
