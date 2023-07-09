@@ -18,21 +18,37 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+theme: jekyll-agency
+
+url: "www.sikopaper.com" 
+baseurl: "" # the subpath of your site, e.g. /blog
+
+
 title: sikopaper
 email: sikopaperあっとジーメール.com 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.sikopaper.com" # the base hostname & protocol for your site, e.g. http://example.com
+  sikopaperは抜ける素晴らしいコンテンツを届ける為に日々努力しています。そう毎日、マジで、
+anuther: TECMAH
+
+# the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sikopaper
-#github_username:  
+#github_username: sikopaper
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+
+#plugins:
+#  - jekyll-feed
+
+
+locale: "ja" 
+
+analytics:
+  google: #Google Analytics tracking code here
+
+collections:
+  portfolio:
+
+markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
