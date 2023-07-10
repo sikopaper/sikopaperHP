@@ -1,16 +1,23 @@
 name: Build and deploy Jekyll site to GitHub Pages
 
-on:
+on:  
+  workflow_dispatch:  # local event trigger
   push:
     branches:
       - main  # Change this to your default branch if not 'main'
 
 jobs:
   github-pages:
+    permissions:
+        actions: write
+        checks: write
+        contents: write
+        deployments: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          persist-credentials: false
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -19,5 +26,5 @@ jobs:
       - name: Build and deploy Jekyll site
         uses: peaceiris/actions-gh-pages@v3
         with:
-            github_token: ${{ secrets.GH_PAT }}
+            github_token: ${{ secrets.GITHUB_TOKEN  }}
             publish_dir: ./_site

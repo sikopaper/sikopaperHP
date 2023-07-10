@@ -16,7 +16,7 @@ bundle install
 bundle exec jekyll serve
 
 
-
+gh workflow run github-pages.yml --ref main
 
 
 
