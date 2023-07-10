@@ -7,6 +7,10 @@ on:
       - main  # Change this to your default branch if not 'main'
 
 jobs:
+    permissions:
+        actions: write
+        checks: write
+        contents: write
   github-pages:
     runs-on: ubuntu-latest
     steps:
