@@ -43,7 +43,7 @@ twitter_username: sikopaper
 locale: "ja" 
 
 analytics:
-  google: #Google Analytics tracking code here
+  google: G-ZDBEM15KK6 #Google Analytics tracking code here
 
 collections:
   portfolio:
